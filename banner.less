@@ -1,0 +1,45 @@
+// main: style.less
+
+.banner {
+    position: relative;
+    
+    &__bg-img {
+        height: 100vh;
+    }
+    
+    &__body {
+        position: absolute;
+        top: calc(25% - 73px);
+        right: 5%;
+        z-index: 100;
+
+        &_sm {
+            display: none;
+        }
+    }
+    
+    &__text {
+        margin: 0 0 20px 0;
+        text-align: right;
+        text-transform: uppercase;
+        font: 32px @montserrat;
+        letter-spacing: -1.5px;
+        font-weight: 700;
+        line-height: 38px;
+        color: #fafafa;        
+    }
+    
+    &__link {
+        align-self: flex-end;
+    }
+
+    &__btn {
+        background-color: #fafafa;
+        color: #050505;
+
+        &:hover {
+            background-color: #050505;
+            color: #fafafa;
+        }
+    }
+}

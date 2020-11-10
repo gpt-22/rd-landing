@@ -1,0 +1,118 @@
+// main: style.less
+
+.men-women {
+    &__body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product {
+        padding: 0;
+    }
+}
+
+.products-grid {
+    position: relative;
+    padding: 20px 20px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+}
+
+.men {
+    &__banner {}
+}
+
+.men-banner {
+    &__bg-img {}
+    &__body {
+        right: 30px;
+        &_md {}
+    }
+    &__text {
+        text-align: right;
+    }
+    &__link {
+        align-self: flex-end;
+    }
+    &__btn {}
+}
+
+.men-products {
+    border-right: 1px solid #eee;
+}
+
+.women {
+    &__banner {}
+}
+
+.women-banner {
+    &__bg-img {
+
+    }
+    &__body {
+        left: 30px;
+        
+        &_md {}
+    }
+    &__text {
+        text-align-last: left;
+    }
+    &__link {
+        align-self: flex-start;
+    }
+    &__btn {}
+}
+
+.women-products {}
+
+
+
+
+
+
+
+
+
+
+.men-banner, .women-banner {
+    position: relative;
+    
+    &__bg-img {
+        height: 680px;
+    }
+    
+    &__body {
+        position: absolute;
+         top: calc(25% - 73px);
+        // right: 5%;
+        z-index: 100;
+
+        &_sm {
+            display: none;
+        }
+    }
+    
+    &__text {
+        margin: 0 0 20px 0;
+        text-align: right;
+        font: 32px @montserrat;
+        letter-spacing: -2px;
+        font-weight: 700;
+        line-height: 38px;
+        color: #000;        
+    }
+    
+    &__link {}
+
+    &__btn {
+        background-color: #050505;
+        color: #fafafa;
+
+        &:hover {
+            background-color: #fafafa;
+            color: #050505;
+        }
+    }
+}
